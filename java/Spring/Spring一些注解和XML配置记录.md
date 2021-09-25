@@ -13,3 +13,15 @@ system-properties-mode 属性 设置系统属性模式 ENVIRONMENT（默认）�
 
 引用成功后使用 `${properties文件中的key}` 来获取值.
 
+### 启用SpringMVC的Controller功能和ResponseBody转json
+
+```xml
+<!--加入xml命名空间-->
+<beans xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+	   http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+<!--启用SpringMVC-->
+<mvc:annotation-driven />
+```
+
